@@ -1,20 +1,35 @@
+<!DOCTYPE HTML>
 <html>
     <head>
         <title>
             Sample HTML Page
         </title>
+        <link href="styles.css" type="text/css" rel="stylesheet">
     </head>
-    <body align="center">
+    <body>
         <header>
-            <h4>Login</h4>
+            <h2>Login</h4>
         </header>
         <form>
-            Username: <input type="text"/>
-            <br>
-            Password: <input type="password"/> 
-            <br>
-            <input type="Submit" name="Submit"/>
-            <input type="Reset"/>
+            <div id="full">
+                <div class="names">
+                    <label>Username:</label>
+                </div>
+                <div class="textboxes">
+                    <input type="text"/>
+                </div>
+                <p></p>
+                <div class="names">
+                    <label>Password:</label>
+                </div>
+                <div class="textboxes">
+                    <input type="password"/> 
+                </div>
+                <p></p>
+                <div>
+                    <input type="Submit" value="Submit"/>
+                </div>
+            </div>
         </form>
     </body>
 </html>

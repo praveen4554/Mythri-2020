@@ -1,0 +1,20 @@
+.names{
+    color: red;
+    display: inline-block;
+    width:5%;
+    text-align: left;
+}
+.textboxes{
+    display:inline;
+}
+#full, header{
+    color: red;
+    width:100%;
+    text-align: center;
+}
+body{
+    background-image: url("UNADJUSTEDNONRAW_thumb_16b.jpg");
+    background-position: top;
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+}
