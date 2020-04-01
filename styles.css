@@ -1,20 +1,40 @@
 .names{
-    color: red;
-    display: inline-block;
-    width:5%;
-    text-align: left;
+    font-size: x-large;
+    color: brown;
+    display: inline;
+    padding: 5px;
 }
 .textboxes{
-    display:inline;
+    display: inline;
 }
-#full, header{
-    color: red;
-    width:100%;
+.header{
     text-align: center;
+    color: darkblue;
+    font-size: -webkit-xxx-large;
+    font-weight: bold;
+    font-family: monospace;
+    margin-bottom: 20px;
+
+}
+#full{
+    color: red;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid blue;
+    width: 30%;
+    margin: auto;
+    font-family: monospace;
+    margin-top: 100px;
+    border-radius: 50px;
+    background-color: lemonchiffon;
+}
+.buttons{
+    background-color: darkorange;
+    margin-top: 20px;
+    padding: 3px;
+    font-size: 18px;
+    font-family: monospace;
 }
 body{
-    background-image: url("UNADJUSTEDNONRAW_thumb_16b.jpg");
-    background-position: top;
-    background-repeat: repeat-y;
-    background-attachment: scroll;
+    background-color: cadetblue;
 }
