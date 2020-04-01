@@ -15,16 +15,65 @@
            #colorTest {
                color: blue;
            }
-           *{
+           /**{
                color: yellow;
+           }*/
+           a {
+               color: red;
+           }
+           a:link {
+               color: green;
+           }
+           a:visited {
+               color: blue;
+           }
+           a:hover {
+               color: yellow;
+           }
+           a:active {
+               color: black;
            }
            p {
                color: green;
            }
-           body {
+           .boxModel {
+               width: 300px;
+               border: 2px solid blue;
+               padding: 40px;
+               margin: 20px;
+               height: 200px;
+               padding-left: 30px;
+               padding-right: 20px;
+               padding-top: 40px;
+               padding-bottom: 50px;
+               padding: 40px 20px 50px 30px;
+               /* top right bottom left*/
+               padding: 25px 20px 50px;
+               /* top right and left bottom*/
+               padding: 25px 20px;
+               /* top and bottom and left and right */
+               padding-left: 40px;
+               margin-right:30px;
+           }
+           .boxModel {
+               width: 200px;
+               height: 200px;
+               border: 2px solid red;
+           }
+           /*
+           complete width - x-axis 
+           content - padding - border - margin
+           width+padding-left+padding-right+border-left+border-right+margin-left+margin-right
+           short hand form
+           padding0left:
+           300 + 2 + 2+ 40 + 40+ 20 +20 = 424
+           height
+           200+2+2+40+40+20+20 = 324
+           */
+           /*body {
                background-image: url("./UNADJUSTEDNONRAW_thumb_16b.jpg");
                background-repeat: no-repeat;
-           }
+           }*/
         </style>
     </head>
     <body>
@@ -32,11 +81,16 @@
         <div class="colorTest">Praveen</div>
         <div>Praveen</div>
         <p style="color: red;">Praveen</p>
-        <div class="first colorTest">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        <!--<div class="first colorTest">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
         <div class="second colorTest">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </div>
         <div class="third colorTest">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
         <div class="fourth colorTest">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>-->
+        <a href="http://google.com/" target="_blank">Google</a>
+        <a href="./firstHtml.html" target="_blank">Test</a>
+        <div class="boxModel">
+            praveen
         </div>
     </body>
 </html>
@@ -57,4 +111,6 @@
                  4
                  inline - block
                  25% 25% 25% 25%
+                 box model
+                 content - padding - border - margin 
             -->
