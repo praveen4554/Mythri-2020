@@ -1,0 +1,19 @@
+ p{
+     color: blue;
+ }
+.first {
+            display: inline-block;
+            width: 40%;
+        }
+.second {
+            display: inline-block;
+            width: 20%;
+        }
+.thrid {
+            display: inline-block;
+            width: 15%;
+        }
+.fourth {
+            display: inline-block;
+            width: 10%;
+        }
