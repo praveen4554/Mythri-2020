@@ -3,15 +3,22 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>sandeep's work</title>
     <style>
+        *{
+            box-sizing:border-box;
+
+        }
+        body {
+            margin:0;
+        }
     .nav{
         background-color:white;
         list-style-type:none;
         text-align:center;
         width:100%;
-        margin:0;
-        padding:0;
+        
         }
         .nav li{
             display:inline-block;
@@ -25,34 +32,38 @@
         .nav li a:hover:not(.active) {
   background-color: #555;
   color: red;
-}
-div.gallery {
-    margin: 5px;
-    border:1px solid black;
-    float:left;
-    width:180px;
-}
-div.gallery:hover {
-  border: 1px solid #777;
-}
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-  float:left;
 }
-
 div.desc {
   padding: 15px;
   text-align:center;
 }
-.footer{
-    position: absolute;
-    bottom:0;
-    padding:10px;
-    text-align:center;
-    background-color: #ddd;
+.column{
+float:left;
+padding:10px;}
 
+/* Left and right column */
+.column.side {
+  width: 35%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
 }
     </style>
 </head>
@@ -73,45 +84,49 @@ div.desc {
 <li><a href=""style=><b>Trending Now<b></a></li>
 <li><a href=""style=><b>Locate<b></a></li>
 </ul>
-</div>
 </header>
+</div>
 <div>
 <hr color="grey" size="3">
 </div>
 <div>
 <section>
-    <div>
+     <div class="row">
 <img src="C:\Users\user\Desktop\sandeep_project\burgurimg1.jfif"alt="image loading"style="width:400px;hight:300px; float:left; margin-right:15px;">
-<p>Three Sizes. One Special Sauce.
+    <p>Three Sizes. One Special Sauce.
 Now there are even more ways to love the classic Big Mac® taste. Try the new Little Mac™ for a taste of our iconic Big Mac® burger or the Double Big Mac®, with twice the 100% pure beef. You get the sesame seed bun, shredded lettuce, diced onion, Big Mac® Sauce, and crisp pickles you love—now in three different sizes.
 </p> <button type="button">leran more</button>
 <button type="button"> McDonald's News</button>
 </div>
-<div>
-<div class="gallery">
-    <img src="C:\Users\user\Desktop\sandeep_project\img1.jpg" alt="loading" width="600" height="400"></a>
-    <div class="desc"><h1>Mobile Order & Pay</h1><br>Pick up your order. Select Drive Thru pick up and tell us your order code at the speaker.
-    <br><br><h6>McD App download and registration required. Mobile Order & Pay available at participating McDonald's.</h6>
-    <br><br>
-    <button type="button">USE APP</button>
-</div>
-</div>
-<div class="gallery">
-    <img src="C:\Users\user\Desktop\sandeep_project\img1.jpg" alt="loading" width="600" height="400"></a>
-    <div class="desc"><h1>Mobile Order & Pay</h1><br>Pick up your order. Select Drive Thru pick up and tell us your order code at the speaker.
-    <br><br><h6>McD App download and registration required. Mobile Order & Pay available at participating McDonald's.</h6>
-    <br><br>
-    <button type="button">USE APP</button>
+<div class="row">
+    <div class="column side">
+    <div class="gallery">
+        <img src="C:\Users\user\Desktop\sandeep_project\img1.jpg" alt="loading"></a>
+        <div class="desc"><h1>Mobile Order & Pay</h1><br>Pick up your order. Select Drive Thru pick up and tell us your order code at the speaker.
+        <br><br><h6>McD App download and registration required. Mobile Order & Pay available at participating McDonald's.</h6>
+        <br><br>
+        <button type="button">USE APP</button>
+    </div></div></div>
+    <div class="column middle">
+    <div class="gallery">
+        <img src="C:\Users\user\Desktop\sandeep_project\img1.jpg" alt="loading"></a>
+        <div class="desc"><h1>Mobile Order & Pay</h1><br>Pick up your order. Select Drive Thru pick up and tell us your order code at the speaker.
+        <br><br><h6>McD App download and registration required. Mobile Order & Pay available at participating McDonald's.</h6>
+        <br><br>
+        <button type="button">USE APP</button>
+        </div></div></div>
+    <div class="column side">
+        <div class="gallery">
+    <img src="C:\Users\user\Desktop\sandeep_project\img1.jpg" alt="loading"></a>
+        <div class="desc"><h1>Mobile Order & Pay</h1><br>Pick up your order. Select Drive Thru pick up and tell us your order code at the speaker.
+        <br><br><h6>McD App download and registration required. Mobile Order & Pay available at participating McDonald's.</h6>
+        <br><br>
+        <button type="button">USE APP</button>
     </div>
-</div>
-<div class="gallery">
-    <img src="C:\Users\user\Desktop\sandeep_project\img1.jpg" alt="loading" width="600" height="400"></a>
-    <div class="desc"><h1>Mobile Order & Pay</h1><br>Pick up your order. Select Drive Thru pick up and tell us your order code at the speaker.
-    <br><br><h6>McD App download and registration required. Mobile Order & Pay available at participating McDonald's.</h6>
-    <br><br>
-    <button type="button">USE APP</button>
-</div>
-</div>
+    </div>
+    </div>
+    </div>
+
 <div>
     <p>
 Three Sizes. One Special Sauce.
@@ -120,16 +135,20 @@ Now there are even more ways to love the classic Big Mac® taste. Get the new Li
 <button type="button">Learn More</button>
 </div>
 </div>
-</section>
 </div>
 <br>
+<div>
 <hr color="grey" size="3">
-<div class="footer">
+</div>
+</section>
+</div>
+<footer>
 <a href=""style="text-decoration:none">privacy(update)</a>&nbsp;&nbsp;
 <a href=""style="text-decoration:none">Terms&conditions</a></span>&nbsp;&nbsp;
 <a href=""style="text-decoration:none">Accessibility</a></span>&nbsp;&nbsp;
 <img src="C:\Users\user\Desktop\sandeep_project\McDonalds-Logo.png"alt="m" style="width:60px; height:40px;">
-<b>&copy;2017-2018 Mc Donald&prime;s  all right Reserved.</b></div>
+<b>&copy;2017-2018 Mc Donald&prime;s  all right Reserved.</b>
+</footer>
 </div>
 </body>
 </html>
