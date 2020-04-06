@@ -1,0 +1,27 @@
+.navBar{
+    background-color: #006491;
+}
+header{
+    width:100%;
+}
+.logo{
+    display:inline;
+}
+.navBarIcon{
+    display: inline;
+    margin: 15px;
+    
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: bolder;
+    width:100%;
+    text-transform: uppercase;
+    color: white;
+}
+a:hover{
+    background-color: #00649a;
+}
+ul{
+    list-style-type: none;
+}

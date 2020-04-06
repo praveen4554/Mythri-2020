@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alternate Table Color while hover</title>
+        <style>
+            div{
+                align-content: center;
+            }
+            table{
+                border: #000;
+                border-spacing: 5px;
+                width: 30%;
+                padding: 40px;
+                border-width: 2px;
+            }
+            th, td{
+                text-align: left;
+            }
+            tr:nth-child(even){
+                background-color: blanchedalmond;
+            }
+            tr:hover{
+                background-color: burlywood;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <table align="center">
+                <thead>
+                    <tr>
+                        <th>EmpID</th>
+                        <th>EmpName</th>
+                        <th>Level</th>
+                        <th>Competency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>John</td>
+                        <td>E3</td>
+                        <td>Sales</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Max</td>
+                        <td>E2</td>
+                        <td>HR</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Brandon</td>
+                        <td>P1</td>
+                        <td>Finance</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Jeff</td>
+                        <td>U2</td>
+                        <td>IT</td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Greg</td>
+                        <td>u1</td>
+                        <td>Sales</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
