@@ -10,10 +10,8 @@
         list-style-type:none;
         text-align:center;
         width:100%;
-        position:sticky;
         margin:0;
         padding:0;
-        overflow:auto;
         }
         .nav li{
             display:inline-block;
@@ -41,16 +39,19 @@ div.gallery:hover {
 div.gallery img {
   width: 100%;
   height: auto;
+  float:left;
 }
 
 div.desc {
   padding: 15px;
   text-align:center;
 }
-div.footer{
+.footer{
+    position: absolute;
+    bottom:0;
     padding:10px;
     text-align:center;
-    margin-top: 20;
+    background-color: #ddd;
 
 }
     </style>
