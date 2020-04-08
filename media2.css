@@ -1,0 +1,45 @@
+body{
+    background-color: lightblue;
+}
+
+.widthChange{
+    border: 5px red solid;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 150px) {
+    .widthChange{
+        font-size:20px;
+    }
+}
+
+@media screen and (min-width: 389px) {
+    .widthChange{
+        font-size:30px;
+    }
+}
+
+@media screen and (min-width: 509px) {
+    .widthChange{
+        font-size:40px;
+    }
+}
+
+@media screen and (min-width: 631px) {
+    .widthChange{
+        font-size:50px;
+    }
+}
+
+@media screen and (min-width: 873px) {
+    .widthChange{
+        font-size:70px;
+    }
+}
+
+@media print {
+    .widthChange{
+        border: 5px dashed chocolate;
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,32 @@
+body{
+    background-color: lightblue;
+}
+
+.widthChange{
+    border: 5px red solid;
+    font-size: 70px;
+}
+
+@media screen and (max-width: 873px) {
+    .widthChange{
+        font-size:50px;
+    }
+}
+
+@media screen and (max-width: 631px) {
+    .widthChange{
+        font-size:40px;
+    }
+}
+
+@media screen and (max-width: 509px) {
+    .widthChange{
+        font-size:30px;
+    }
+}
+
+@media screen and (max-width: 389px) {
+    .widthChange{
+        font-size:20px;
+    }
+}
