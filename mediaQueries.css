@@ -1,0 +1,30 @@
+@media only screen and (max-width: 2048px) {
+    body {
+        background-color: red;
+    }
+.firstClass {
+    display: inline-block;
+    width: 24%;
+    border: 1px solid;
+}
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: green;
+    }
+  
+ .firstClass {
+    display: inline-block;
+    border: 1px solid;
+    width: 49%;
+}
+}
+
+
+@media only screen and (max-width: 360px) {
+ .firstClass {
+    display: inline-block;
+    border: 1px solid;
+    width: 100%;
+}
+}
