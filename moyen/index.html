@@ -3,60 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <meta name="Author" content="Moyen">
-        <meta name="Description" content="Main page for Domino's">
-        <meta name="Keywords" content="Pizza, Delivery, Carry out, Deals">  
-
+        <meta name="Keywords" content="Pizza, Delivery, Pizza Delivery, Carryout, Pizza Carryout">
+        <meta name="Description" content="Domino's main page">
         <title>Pizza Delivery & Carryout, Pasta, Chicken and More | Domino's</title>
-        <link href="/images/dominos.png"></link>
-        <link rel="stylesheet" href="./main.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="./main.css">
     </head>
-
     <body>
-        <nav class="primaryNav">
-            <div class="innerNavDiv">
-                <ul>
-                    <li>
-                        <a href="./index.html"><img class="navLogo" src="images/dominos.png" alt="logo"></a>
-                    </li>    
-                    <li class="navMenuItem"> Order Online </li>
-                    <li class="navMenuItem"> Order Online </li>
-                    <li class="navMenuItem"> Order Online </li>
-                    <li class="navMenuItem"> Order Online </li>
-                    <li class="navMenuItem"> Order Online </li>
-                    <li class="navMenuItem"> Order Online </li>
-                    <li class="navMenuItem"> Order Online </li>
-                </ul>
-            </div>
+        <nav class="customNav">
+            <ul class="mainNav">
+                <li class="item">
+                    <a href="./index.html"><img class="navLogo" src="images/dominos.png" alt="Domino's Logo"></a>
+                </li>
+                <li class="item"><a href="./index.html">Order online</a></li>
+                <li class="item"><a href="./index.html">menu</a></li>
+                <li class="item"><a href="./index.html">coupons</a></li>
+                <li class="item"><a href="./index.html">tracker</a></li>
+                <li class="item"><a href="./index.html">pizza profile</a></li>
+                <li class="item"><a id="nearestLocation" href="./index.html">view your local domino's</a></li>
+                <li class="item"><a href="./index.html">sing in & earn rewards</a></li>
+                <li class="item"><a href="./index.html">cart</a></li>
+            </ul>
         </nav>
-        <!-- <nav style="background-color: #0D7AB4;color:whitesmoke;text-decoration: none;font-size:large;">
-            <table cellpadding="40">
-                <tr>
-                    <td><a href="https://www.dominos.com/en/" alt="Domino's logo"><img src="images/dominos.png" style="width: 70px;height:50px"></a></td>
-                    <td><a href="https://www.dominos.com/en/pages/order/#!/locations/search/">ORDER ONLINE</a></td>
-                    <td><a href="https://www.dominos.com/en/pages/order/menu">MENU</a></td>
-                    <td><a href="https://www.dominos.com/en/pages/order/coupon#!/coupon/national/">COUPONS</a></td>
-                    <td><a href="https://www.dominos.com/en/pages/order/?locations=1#!/locations/">LOCATIONS</a></td>
-                    <td><a href="https://www.dominos.com/en/pages/tracker/#!/track/order/">TRACKER</a></td>
-                </tr>
-            </table>
-        </nav>
+        <div class="smartOrder">
+            <h1 class="orderInsideHeader">Start your order</h1>
+            <a class="smartButton" href="./index.html">Delivery</a>
+            <span class="betweenButton"> or</span>
+            <a class="smartButton" href="./index.html">Carryout</a>
+        </div>
 
-        <p align="center">
-            <b>START YOUR ORDER</b>
-            <br>
-            <button><a href="https://www.dominos.com/en/pages/order/#!/locations/search/?type=Delivery">DELIVERY</a></button>
-            <b>OR</b>
-            <button><a href="https://www.dominos.com/en/pages/order/#!/locations/search/?type=Carryout">CARRY OUT</a></button>
-        </p>
-        
-        <br>
-        <br>
+        <div class="promoImgs">
+            <img id="promoPicOne" src="images/pic1.jpg">
+                <div class="innerPromo">
+                    <img id="promoPicTwo" src="images/pic2.jpg">
+                    <img src="images/pic3.jpg">
+                </div>
+        </div>
 
-        <a href="https://www.dominos.com/en/pages/order/?couponCode_0=9193&partnerCode=DOMINOS&so=hp&panelname=599mixmatch&panelnumber=1">
-            <img src="images/pic1.jpg" style="width: 500px;height:400px">
-            <img src="images/pic2.jpg" style="width: 400px;height:300px">
-            <img src="images/pic3.jpg" style="width: 400px;height:300px">
-        </a>
- -->
+        <div style="height:2000px"></div>
+
     </body>
 </html>
