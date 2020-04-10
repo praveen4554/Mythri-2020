@@ -1,0 +1,25 @@
+.text-shadow {
+    text-shadow: 2px 2px 5px red, 5px 5px 5px green;
+    color: black;
+}
+
+.box-shadow {
+    border: 1px solid red;
+    box-shadow: 2px 2px red;
+    background-image: linear-gradient(red,green);  
+    background-image: linear-gradient(red 5%, green 10%, yellow 15%);
+    background-image: repeating-radial-gradient(black, transparent 100px);
+    background-image: linear-gradient(url("./UNADJUSTEDNONRAW_thumb_16b.jpg") 5%, green 10%, yellow 15%);
+}
+
+.transform {
+    transform: rotate(20deg);
+    width:50px;
+    height: 50px;
+        border: 1px solid;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    /* margin: 0 auto; */
+    left: 50%;
+}
