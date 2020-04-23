@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Comaptible" content="ie=edge">
+        <title>sorting</title>
+    </head>
+    <body>
+        <script>
+            /*let c = " it was a good day and nice weather.";
+            let words = c.split(" ");
+            /*words.sort((a,b) => b.length-a.length);
+            console.log(words);
+            words.sort((a,b) => a.length-b.length);
+            console.log(words);*/
+
+            let festivals = [
+                { title: 'Republic Day', date: new Date('01-26-2020')},
+                { title: 'Makara Sankranthi', date: new Date('01-16-2020')},
+                { title: 'Lohri', date: new Date('01-13-2020')},
+                { title: 'Vasant Panchami', date: new Date('01-29-2020')}
+            ]
+
+            let sortedFestivals = festivals.sort((a,b) => a.date-b.date);
+            console.log(festivals)
+        </script>
+    </body>
+    </html>
