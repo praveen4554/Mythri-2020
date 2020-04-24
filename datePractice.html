@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="moyen">
+        <meta name="descriptiom" content="date functionalities">
+    </head>
+
+    <body>
+        <h1 id="full-date">todays date</h1>
+        <h1 id="day">todays day</h1>
+        <h1 id="month">this month</h1>
+        <h1 id="year">this year</h1>    
+        <h1 id="new-date">this will call constructor</h1>
+        <a href="#" onclick="changeHeaders()">Click me to see changes</a>
+        <script>
+            function changeHeaders(){
+                var date = new Date();
+                document.getElementById('full-date').innerHTML = date;
+                document.getElementById('day').innerHTML = date.getDate();
+                document.getElementById('month').innerHTML = date.toDateString().split(' ')[1];
+                document.getElementById('year').innerHTML = date.getFullYear();
+                document.getElementById('new-date').innerHTML = new Date(1999, 1, 1).toDateString();
+            }
+        </script>
+    </body>
+</html>
