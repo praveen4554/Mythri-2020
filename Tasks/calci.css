@@ -1,0 +1,25 @@
+.title1{
+    font-size: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.box1{
+    width: 500px;
+    height: 300px;
+    padding: 5px;
+    margin: auto;
+}
+.output{
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+}
+.font{
+    font-family: Verdana;
+}
+.num{
+    background-color: #eeeeee;
+    width: 30px;
+}

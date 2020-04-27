@@ -18,7 +18,7 @@ ul{
     text-decoration: none;
 }
 
-@media screen and (max-width: 522px) {
+@media screen and (max-width: 522px),(orientation:potrait) {
     .widthChange li{
         float: none;
         padding:5px;
