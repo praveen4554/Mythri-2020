@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <title>Mythri</title>
+        <meta keywords="">
+        <meta charset="UTF-8">
+        <style>
+         .container {
+             display: grid;
+             /*flex-direction: row;*/
+            /*flex-wrap: wrap-reverse;*/
+            grid-template-columns: auto auto auto;
+
+         }
+         .items {
+             border: 1px solid red;
+             color: green;
+             width:100px;
+             height:100px;
+         }
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <div class="container">
+               <div class="items">praveen1</div>
+               <div class="items">praveen2</div>
+               <div class="items">praveen3</div>
+               <!--<div class="items">praveen11</div>
+               <div class="items">praveen12</div>
+               <div class="items">praveen13</div>
+               <div class="items">praveen21</div>
+               <div class="items">praveen22</div>
+               <div class="items">praveen23</div>
+               <div class="items">praveen31</div>
+               <div class="items">praveen32</div>
+               <div class="items">praveen33</div>-->
+               <div id="temp">praveen</div>
+               <!--<div class="items">praveen41</div>
+               <div class="items">praveen42</div>
+               <div class="items">praveen43</div>-->
+        </div>
+        <script>
+        var a=10;
+        var b=20;
+        console.log(a+b);
+          document.getElementById("temp").style.color = "red";
+          console.log(document.getElementById("temp"));
+        </script>
+    </body>
+</html>
+
+
+@mixin fontFamily (size:20px) {
+    font-size: size;
+    font-family: times-newrman;
+    font-weight: 800;
+    posiytion: fixed;
+    z-index : -1;
+}
+
+$size: 15px;
+
+.items {
+   @include fontFamily();
+   font-size: 20px;
+ //font-size: 10px;
+}
+   div {
+       color: red;
+   }
+        div > div {
+            color: green;
+        }
+        div > div > div {
+            color: blue;
+        }
+        div > div > div > div {
+            color: yellow;
+        }
+
+        div 
+            color: red;
+            div 
+             color: green;
+              div
+               color: blue;
+               div
+                color: yellow;
+
+    <!--
+        boolean
+        string
+        Number
+        undefined
+        null
+        symbol
+        +
+        -*
+        /
+        %
+        preincrement
+        postincrement
+
+        comparision operators
+
+        A && B - true if both A & B true 
+
+        A || B - false if both A & B false
+
+         <
+         >
+         ==
+         <=
+         >=
+         !=
+         //ternary operator simplify of if and elase
+         prefix
+         postfix
+         infix
+
+
+         1+2+'praveen'+1+2
+        
+         1+2 = 3
+         3+'praveen' = '3praveen'
+         '3praveen'+1 = '3praveen1'
+         '3praveen1'+2 = '3praveen12'
+
+         1+2+'praveen'+(1+2)
+         1+2 = 3
+         3+'praveen' = '3praveen'
+         1+2 = 3;
+         '3praveen'+3 = '3praveen3'
+
+          == value true -1 false 0
+         === strict comparision value + data type
+
+         1 === '1' - true
+
+         0 === false - 
+
+         2 == true - false
+
+         while(condition -- true) {
+
+         }
+         while(1){
+
+         }
+         if(1){
+
+         }
+         if - one time loop
+         for
+         while
+         do while
+       
+         if(condition) {
+
+         } else {
+
+         }
+         
+         while(1){
+
+         }
+         while(0){
+
+         }
+         if(1){
+
+         }else {
+
+         }
+         if(0){
+
+         }else {
+
+         }
+
+         if(false){
+
+         } else if(condition){
+
+         } else {
+             
+         }
+         switch
+
+    -->
+
