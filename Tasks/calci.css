@@ -1,6 +1,5 @@
 .title1{
     font-size: 30px;
-    margin: auto;
     margin-bottom: 20px;
     padding: 20px;
     text-align: center;
@@ -10,16 +9,43 @@
     height: 300px;
     padding: 5px;
     margin: auto;
+    margin-left: 42%;
+}
+.clear{
+    margin: 1px;
+    width: 220px;
+    text-align: center;
+    border-color: black;
+    border-width: 1px;
+    border-style: dashed;
+    color: red;
 }
 .output{
-    width: 150px;
+    width: 220px;
     text-align: right;
     font-weight: bold;
+    margin: 5px 2px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2px;
 }
 .font{
     font-family: Verdana;
 }
+.btn{
+    width: 52px;
+    align-content: center;
+}
 .num{
     background-color: #eeeeee;
-    width: 30px;
+}
+.op{
+    background-color: #ddd5d5;
+}
+.eq{
+    background-color: #616caa;
+}
+td{
+    text-align: center;
 }
