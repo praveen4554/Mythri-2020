@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Moyen">
+        <meta name="Description" content="Contact Form">
+        <link rel="stylesheet" href="./simpleFormStyle.css" type="text/css">
+    </head>
+
+    <body>
+        <div id="mainForm">
+            <h1>Sign Up</h1>
+            
+            <form id="userInfo">
+                <h3>Name</h3>
+                <input name="name" type="text">
+
+                <h3>Age</h3>
+                <input name="age" type="number">
+
+                <h3>Income</h3>
+                <input name="income" type="number">
+
+                <h3>More Info</h3>
+                <input type="text">
+                
+                <div>
+                    <h3>Gender</h3>
+                    <span>Male</span>  <input type="radio" name="gender" value="Male">
+                    <span>Female</span> <input type="radio" name="gender" value="Female">        
+                </div>
+
+                <h3>Plan</h3>
+                <select name="" id="planDropDown">
+                    <option selected value="None">None </option>
+                    <option value="Orange">Orange</option>
+                    <option value="Mango">Mango</option>
+                    <option value="Apple">Apple</option>
+                </select>
+
+                <div style="padding: 10px; padding-left:0;">
+                    <span>Single</span>
+                    <input name="single" type="checkbox">
+                    <span>Married</span>
+                    <input name="married" type="checkbox">
+                </div>
+
+                <a onclick="formValidate();" id="submitFormButton" href="#">Submit</a>
+            </form>
+        </div>
+        <script src="./simpleForm.js"></script>
+    </body>
+
+</html>

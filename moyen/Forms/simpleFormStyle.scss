@@ -1,0 +1,49 @@
+@import "./variables";
+
+@mixin similarPosition {
+    position: relative;
+    bottom: 15px;    
+}
+
+@mixin flexDirection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    height: 100vh;
+    @include flexDirection();
+}
+
+#mainForm{
+    font-family: $fontFamily;
+    color: $fontColor;
+    @include flexDirection();
+
+    form{
+        border: $border;
+        padding: 30px;
+        input{
+            @include similarPosition();
+            padding: 5px 0;
+        }
+        span{
+            @include similarPosition();
+        }
+        select{
+            @include similarPosition();
+        }
+    }
+}
+
+#submitFormButton{
+    padding: 5px;
+    position: relative;
+    top: 20px;
+    left: 50px;
+    text-decoration: none;
+    border: $border;
+    background-color: lightcoral;    
+}
