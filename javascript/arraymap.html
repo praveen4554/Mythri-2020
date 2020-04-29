@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>array map</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+                    <meta charset="utf-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                        </head>
+                        <body>
+                            <h5>creates a new array by performing a function on each array element.</h5>
+                            <div id="demo">
+                                <script>
+                                    const n1=[4,3,2,6,8,0,1];
+                                    const newarray= n1.map(myFunctionindex);
+                                    document.getElementById("demo").innerHTML="before map function ="+ n1+"after map function = " +newarray;
+                                    function myFunctionindex(value, index, array) {
+                                        return value + 10;
+                                    }
+                                </script>
+                            </div>
+                            </body>
+                            </html>

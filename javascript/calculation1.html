@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js calculation</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+                    <meta charset="utf-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                        </head>
+        
+
+    <style>
+        .calculation {
+            border: 2px solid;
+            border-color: blue;
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+            width:35%;
+
+            
+
+
+        }
+    </style>
+  <body>
+<div class="calculation">
+    <form>
+    <div>
+<button type= "button" class=" btn btn-primary" onclick="myFunctionadd('+')">Add</button>
+<button type= "button" class=" btn btn-primary" onclick="myFunctionmul()">Mul</button>
+<button type= "button" class=" btn btn-primary" onclick="myFunctionsub()">Sub</button>
+<button type= "reset" class=" btn btn-primary">Clear</button>
+</div><br>
+<br>
+<div id ="inputfield">
+    <div><input type="number" id="a" placeholder="Enter first number" onfocus="myfunctiongray()"></div>
+    <div><input type="number" id="b" placeholder="Enter second number"></div>
+    <div><input type="text"  id="result"></div>
+</div>
+
+<script>
+    function myFunctionadd() {
+    
+        var a,b;
+        var result=null;
+        result= a + b;
+        document.getElementById('result').value=parseInt(document.getElementById("a").value)+parseInt(document.getElementById("b").value);
+    
+    }
+    function myFunctionmul() {
+        var a=parseInt(document.getElementById("a").value);
+        var b=parseInt(document.getElementById("b").value);
+        result= a * b;
+        document.getElementById('result').value=result;
+    
+    }
+    function myFunctionsub() {
+        var a=parseInt(document.getElementById("a").value);
+        var b=parseInt(document.getElementById("b").value);
+        var result=null;
+        result= a - b;
+        document.getElementById('result').value=result;
+    }
+function myfunctiongray() {
+console.log("hello")
+}
+   
+  
+
+
+</script>
+</form>
+</div>
+    </body>
+</html>
