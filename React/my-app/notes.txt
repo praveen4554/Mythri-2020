@@ -1,0 +1,25 @@
+JSX - javascript and xml
+
+xss- attack - cross site scripting 
+
+JSX - babel - jsx- javascript 
+<script src="./"/>
+JSX- it should be component
+
+
+REAL DOM - tree structure 
+before SPA - single paged applications
+costliest opration - my header is not changed and footer is not changed 
+SPA - header and footer only the body will be change based on route 
+real dom - its costliest
+header
+  body - completely chage this body ever the rout change 
+footer
+
+VIRTUAL DOM - it copies the real dom when ever have update any value or any thing
+it will update the virtual DOM 
+
+virtaul DOM - checks with REALDOM if any node change the node will be rendred 
+rather reloading complete page 
+improves performance of your application 
+
