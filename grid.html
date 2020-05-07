@@ -4,10 +4,10 @@
         <meta keywords="">
         <meta charset="UTF-8">
         <style>
-         .container {
+         /*.container {
              display: grid;
-             /*flex-direction: row;*/
-            /*flex-wrap: wrap-reverse;*/
+             flex-direction: row;
+            flex-wrap: wrap-reverse;
             grid-template-columns: auto auto auto;
 
          }
@@ -16,7 +16,7 @@
              color: green;
              width:100px;
              height:100px;
-         }
+         }*/
         </style>
         <script>
 
@@ -24,9 +24,9 @@
     </head>
     <body>
         <div class="container">
-               <div class="items">praveen1</div>
+               <!--<div class="items">praveen1</div>
                <div class="items">praveen2</div>
-               <div class="items">praveen3</div>
+               <div class="items">praveen3</div>-->
                <!--<div class="items">praveen11</div>
                <div class="items">praveen12</div>
                <div class="items">praveen13</div>
@@ -36,17 +36,130 @@
                <div class="items">praveen31</div>
                <div class="items">praveen32</div>
                <div class="items">praveen33</div>-->
-               <div id="temp">praveen</div>
+               <!--<div id="temp">praveen</div>-->
+                   <input type="text" id="myString" /><br/>
+                 <input type="text" id="firstCharacter" /><br/>
+                   <input type="text" id="lastCharacter" /><br/>
+
+                   <input type="text" id="result" /><br/>
+                   <button onClick="checkCharacters()">Submit</button>
+                     <!--<input type="text" id="firstNumber" onfocus="focus12()" onblur="blur12()"/><br/>
+               <input type="text" id="firstNumber" onfocus="focus12()" onblur="blur12()"/><br/>
+               <input type="number" id="secondNumber"/> <br/>
+
+               <input type="text" id="result"/><br/>
+               <button onClick="add()">Add</button>-->
                <!--<div class="items">praveen41</div>
                <div class="items">praveen42</div>
                <div class="items">praveen43</div>-->
+               <!--<input type="text" name="txt" value="Hello" onChange="over()">
+               <form method="POST" action="return false" onSubmit="return validate()">
+               <input type="text" id="firstNumber" onchange="change12()"/><br/>
+               <input type="number" id="secondNumber"/> <br/>
+
+               <input type="text" id="result"/><br/>-->
+               <!--<button onClick="add()">Add</button>-->
+               <!--<input type="submit" value="formSubmit"/>
+               </form>
+               <input type="checkbox" onchange="change12()"/>e-commerce
+               <button onmouseover="over()" onmouseout="out()">Mouse Events</button>-->
         </div>
         <script>
-        var a=10;
-        var b=20;
-        console.log(a+b);
-          document.getElementById("temp").style.color = "red";
-          console.log(document.getElementById("temp"));
+        'use strict'
+        // var a=10;
+        // var b=20;
+        // console.log(a+b);
+        // function validate(){
+        //     event.preventDefault();
+        //     console.log('submitted');
+        // }
+        // function focus12() {
+        //     console.log('focus');
+        // }
+        // function blur12() {
+        //     console.log('blur');
+        // }
+        // function over() {
+        //     console.log("over");
+        // }
+        // function change12() {
+        //     console.log("change")
+        // }
+        // function out() {
+        //     console.log("out");
+        // }
+        // //  document.getElementById("temp").style.color = "red";
+        //   console.log(document.getElementById("temp"));
+        //   switch(true) {
+        //       case true: console.log('first switch case');
+        //                 break;
+        //       case 40: console.log('second switch case');
+        //                 break;
+        //     default: console.log('default case');
+        //   }
+        // view cart - call function - API Service - should return values 
+        // function test(){
+           // . if(i == 5){console.log} 
+        //}
+        //
+        //   function add(){
+        //       var a = parseInt(document.getElementById("firstNumber").value);
+        //       var b = parseInt(document.getElementById("secondNumber").value);
+        //       document.getElementById("result").value = a+b;
+        //   }
+        // hoisting 
+        // function test() {
+                // var d;var c; var i; d=10; for(i=0;i<5;i++){} c=10;
+       // }
+       // 'use strict'
+      // var d;
+        //   function test(){
+        //       d = 10;
+        //       console.log(d);
+        //      console.log(i);
+        //      for(var i=0;i<5;i++){
+
+        //      }
+        //      console.log(i);
+        //      var c= 10;
+        //   }
+
+        //   test();
+        //   console.log(d);
+          //add(3,4);
+          function test(i){
+              if(i == 5){
+                  console.log('praveen');
+                  return;
+              }
+              console.log('Mythri');
+          }
+          test(5);
+            /**
+              the first letter t and last letter r then we need to return true other wise we need to return false
+              string - 1
+              indexOf first letter 0
+              indexof last letter legnth-1
+            */
+            function checkCharacters(){
+                 document.getElementById("result").value = checkString( 
+                     document.getElementById("myString").value,
+                      document.getElementById("firstCharacter").value,
+                       document.getElementById("lastCharacter").value
+                     )
+            }
+          function checkString(str,firstCharacter,lastCharacter){
+            //   console.log(str.length); //12
+            //   console.log(str.indexOf('t')); // 0
+            //   console.log(str.indexOf('e'));//3
+            //   console.log(str.lastIndexOf('e'));//10
+            //   console.log(str.indexOf('r')); // 4
+            //   console.log(str.lastIndexOf('r')); //11
+              return str.indexOf(firstCharacter) == 0 && str.lastIndexOf(lastCharacter) == str.length-1
+          }
+         // console.log(checkString('tiger')); //true
+       //  document.getElementById("result").value = checkString('test','t','t'); // false
+         // console.log(checkString('tiger tester','t','r')); //true
         </script>
     </body>
 </html>
@@ -90,6 +203,13 @@ $size: 15px;
                 color: yellow;
 
     <!--
+        <person>
+            <username>praveen</username>
+            <company>Mythri</company>
+            </person>
+            XML - extended markup language 
+            JSON - javascript object notatoion
+            {username: 'praveen',company: 'mythri'}
         boolean
         string
         Number
@@ -185,9 +305,61 @@ $size: 15px;
          } else if(condition){
 
          } else {
-             
-         }
-         switch
 
+         }
+         switch (statement) {
+             case statemen1: statemnst
+                             break;
+             case statemen2: statenst
+                                break;
+
+            default:
+
+         }
+
+                        fifo - first in first out  - queues 
+            callstack - lifo - last in first out [1,2,3,4,5]
+
+  eventLoop 5 async 4
+  graphQL- node js - 
+  checkout - PI,AI,CC,BA,TC 
+  Sprite images - it will combine 2 or more images to single image 
+  7 -images to single 
+  0
+  1,2,3,4,5
+  we will change to ASYNC 
+  lazy loading 
+  reusable and readble 
+  scroll positon 
+  browser cache - browser
+  application cache - 
+  api call cache -  getUsers 20 secs - result browser memory getUsers - backend 
+  success msg then we are goin to read from the cache ms 
+  service workers - 15 secs - it will capture all the static things to browser memory 
+  next time onwards loads our browser < 1 s
+  webworkers - it will run the background 
+  analytics - 
+
+    
+
+     shallow copy   = refernces
+      we have only one book and if some one write some thing if we take the same book 
+      we have only one notes
+      i have write some thing
+
+     var obj1 = {a: 10}; - CF0000
+     var obj2 = obj1; - CF0000
+       obj1   C.S
+       obj2   C.S
+
+       deep copy - values 
+        we have 1 book
+    you took a copy 
+    if i write some thing in my book 
+       
+       Dependecny Injection 2 objects
+
+       1 object full Name fullName(fName,laName)
+      2 object inject object1 object.fullName(praveen,kumar)
     -->
 

@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>Mythri</title>
+        <meta keywords="">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+          var a = 10;
+        //   function test(){
+        //       var a = 20;
+        //       console.log(this.a);
+        //       console.log(a);
+        //       (function test1(){
+        //           var a = 30;
+        //           console.log(self.a);
+        //           console.log(this.a);
+        //       })(self);
+        //   }
+        function test(){
+            return 10;
+        }
+        function test1() {
+            
+        }
+        var addObject = {
+            a: 10,
+            b:20,
+            sum: function(){
+                return this.a+this.b;
+            }
+
+        }
+        addObject.sum(); //30
+       // addObject.a = 20;
+        addObject.sum(); // 40
+        var add20 = addObject.sum.bind({a:20,b:30});//50
+        addObject.sum();//30
+        var a = test();
+        console.log(a);
+        var b = test1();
+        console.log(b);
+        function personContainer(){
+        var person = {
+            name: "praveen1 kumar",
+            fullName: function() {
+                console.log(this.name+''+ arguments[0]+arguments[1]);
+            }
+        }
+          person.fullName.apply({name: 'praveen'},arguments);
+        }
+        personContainer('praveen','kumar');
+
+        function personContainer1(arg1,arg2){
+        var person = {
+            name: "praveen1 kumar",
+            fullName: function(arg1,arg2) {
+                console.log(this.name+''+ arg1+arg2);
+            }
+        }
+          person.fullName.call({name: 'praveen'},arg1,arg2);
+        }
+
+        personContainer1('praveen','kumar');
+
+    
+       // person.
+
+         // add5 - 100 a = 5
+      // add10 - 200  a=10
+
+
+      // add5 - 100 a=5
+      // add10 - 100 a=10
+      /*
+       for(var i=0;i<5;i++){
+           setTimeout(()=>{console.log(i)},5000)
+        }
+       i= 0 - setTimeout - async i=0 0
+       i= 1-  setTimeout - async 5
+       i= 2 -  setTimeout - async 5
+       i= 3-  setTimeout - async 5
+       i= 4-  setTimeout - async 5
+       i=5
+      */
+      /*
+      for(var i=0;i<5;i++){
+          (function(index)
+          {setTimeout(()=>{console.log(index)},5000)})
+          (i)
+          }
+
+          function print(index){
+              setTimeout(()=>{console.log(index)},5000)
+          }
+
+           for(var i=0;i<5;i++){
+               pint(i);
+          }
+  protypical inhertinace 
+  prototype
+       i= 0 - annonymous function index - 0 setTimeout - async  0
+       i= 1-  annonymous function index - 1 setTimeout - async 1
+       i= 2 -  setTimeout - async 5
+       i= 3-  setTimeout - async 5
+       i= 4-  setTimeout - async 5
+      
+      */
+       //var bindName = person.fullName.bind({name:'Mythri'});
+        //person.fullName();
+        //bindName();
+          //test();
+          /*
+            parent container makes an api call
+            it gets all the data username and alldetails , copyrights 
+            res = {username:"", copyrights:"",profile:{}}
+            const {username, copyrights, profile} = res;
+            container 
+            header - username - username
+             footer - copy rights - copyrights
+              body - remaining info - profile
+              class
+              interface 
+              Generators 
+
+              when user logged in 
+              all hidetails - userid - his dependencies - branchid - syllabus
+          */
+        </script>
+    </body>
+    <body>
