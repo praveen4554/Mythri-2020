@@ -1,5 +1,18 @@
+<<<<<<< HEAD
 /Vids
 
 *.txt
 
 1.pdf
+=======
+/React/my-app/node_modules
+/React/my-app/build
+/React/my-app/package-lock.json
+/React/my-app/yarn.lock
+/React/app-ram/node_modules
+/React/app-ram/build
+/React/app-ram/package-lock.json
+/React/app-ram/yarn.lock
+/React/node_modules
+/React/package-lock.json
+>>>>>>> 33bdbd326e89518339be3db4a59df78fcfd04c3d
