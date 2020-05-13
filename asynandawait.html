@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Mythri</title>
+        <meta keywords="">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+        // console.log('test');
+        // console.log('test1');
+        // console.log('test2');
+       async function test() {
+           let promise = new Promise((res,rej)=>{
+                setTimeout(()=> res(1),1000);
+            })
+            await promise.then((result)=>{
+                console.log('promise');
+                console.log(result);
+            })
+             console.log('test3');
+        //    return  setTimeout(()=>  1,1000);
+        }
+        //  window.sessionStorage.setItem('username',JSON.stringify({username:'praveen'}));
+        // console.log(JSON.parse(window.sessionStorage.getItem('username')));
+        // logged in from the backeend we will get apikey and we will store into the sessionStorage 
+        /*
+        * - 0 or more
+        + - 1 or more 
+        ? - 0 or 1
+        A-Z - all the capital letters
+        a-z - all the samm letters
+        0-9 - all the numbers
+        ˆ- starts with
+        $ - endswith 
+        gulp
+        grunt
+        yarn
+        webpack
+
+        yarn
+        install node JS
+        install yarn 
+        yarn create app
+        built in module - node
+        third party module - public
+        custom module - our own things 
+        package.json
+        package-lock.json
+        */
+        test();
+        </script>
+    </body>
+</html>
