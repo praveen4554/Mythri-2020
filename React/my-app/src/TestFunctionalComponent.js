@@ -8,7 +8,7 @@ export default function Test(props) {
         { 1 + 1}
         {a == 10 ? <div>we are displaying the value of a {a}</div>:
     <div>we are displaying no value</div>}
-      <button onClick={()=>props.onDataChange(a)}> Pass the data to parent</button>
+      <button onClick={(event)=>props.onDataChange(event,'personalInfo')}> Pass the data to parent</button>
         </div>
     )
 }
