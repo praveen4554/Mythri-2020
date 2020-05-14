@@ -1,6 +1,6 @@
 import React from 'react';
 import Test from './TestFunctionalComponent';
-
+import LifeCycleHooks from './LifeCycleComponent';
 export class TestComponent extends React.Component {
     constructor(){
         super();
@@ -20,13 +20,14 @@ export class TestComponent extends React.Component {
        })
         // console.log(this.state); mutable vs immutable
     }
-    childData(event){
+    childData(event,info){
         console.log(event);
         this.setState({childData: 'Data from Child'});
     }
     render(){
         return (
             <div>
+            <LifeCycleHooks data={this.state.name}/>
             <Test value={this.state.childData} onDataChange={this.childData}/>
                Test component {this.state.name}
                <button onClick={this.changeName}> changeName</button>
