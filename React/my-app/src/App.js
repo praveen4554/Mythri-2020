@@ -3,10 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 import {TestComponent} from './TestComponent';
 import FormValidation from './FormValidation';
+import { CheckoutContainer } from './CheckoutContainer';
 function App() {
   return (
     <div className="App">
-    <FormValidation/>
+    <CheckoutContainer/>
     {/*<header className="App-header">
     <TestComponent/>
       <img src={logo} className="App-logo" alt="logo" />
