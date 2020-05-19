@@ -4,11 +4,22 @@ import './App.css';
 import {TestComponent} from './TestComponent';
 import FormValidation from './FormValidation';
 import { CheckoutContainer } from './CheckoutContainer';
+import { Counter } from './Counter';
+import { ClickCounter } from './ClickComponent';
+import { HoverCounter } from './HoverComponent';
 function App() {
   return (
     <div className="App">
-    <CheckoutContainer/>
+    <Counter render={(counter, incrementCount, decrementCount) => (
+      <ClickCounter counter = {counter} incrementCount={incrementCount} decrementCount={decrementCount}/>
+    )}>
+    </Counter>
+    <Counter render={(counter, incrementCount,decrementCount) => (
+      <HoverCounter counter = {counter} incrementCount={incrementCount} decrementCount={decrementCount}/>
+    )}>
+    </Counter>
     {/*<header className="App-header">
+     <CheckoutContainer/>
     <TestComponent/>
       <img src={logo} className="App-logo" alt="logo" />
       <p>
@@ -22,6 +33,11 @@ function App() {
       >
         Learn React
       </a>
+      REQUIREMENT
+      1.  counter in one place when click on it i want to incrementCount
+      2. counter in another place when i hover i want to incremntCount
+      counterComponent - onCLick 
+      counterCOmponent - onhover
 </header>*/}
       </div>
   );
