@@ -1,0 +1,57 @@
+JSX - javascript and xml
+
+xss- attack - cross site scripting 
+
+JSX - babel - jsx- javascript 
+<script src="./"/>
+JSX- it should be component
+
+
+REAL DOM - tree structure 
+before SPA - single paged applications
+costliest opration - my header is not changed and footer is not changed 
+SPA - header and footer only the body will be change based on route 
+real dom - its costliest
+header
+  body - completely chage this body ever the rout change 
+footer
+
+VIRTUAL DOM - it copies the real dom when ever have update any value or any thing
+it will update the virtual DOM 
+
+virtaul DOM - checks with REALDOM if any node change the node will be rendred 
+rather reloading complete page 
+improves performance of your application
+
+
+Redux
+
+wallmart -
+
+cart page - 
+
+dress
+laptops 
+mobiles
+toys
+
+they're maintaing a state for entire application
+Redux - single store of entire application
+
+dress- store
+laptops - store
+
+cart page - we are reading from the store rather than make an event or making an api call 
+
+SingleSourceTurth - single Store 
+State is Read only - we cant update the redux state the components will read the redux state
+changesMadebyPureFUnctions - reducer it will take the previous state it will do manipulation it will retrun nes state
+
+
+Action - describe some thing will be happened 
+Reducer - which actually changes the state
+view - view the data
+Store  it will stores the data
+
+
+

@@ -6,10 +6,12 @@ import FormValidation from './FormValidation';
 import { CheckoutContainer } from './CheckoutContainer';
 import { Counter } from './Counter';
 import { ClickCounter } from './ClickComponent';
-import { HoverCounter } from './HoverComponent';
-function App() {
+import HoverCounter from './HoverComponent';
+import { connect } from 'react-redux';
+function App(props) {
   return (
     <div className="App">
+    {props.userName}
     <Counter render={(counter, incrementCount, decrementCount) => (
       <ClickCounter counter = {counter} incrementCount={incrementCount} decrementCount={decrementCount}/>
     )}>
@@ -18,6 +20,7 @@ function App() {
       <HoverCounter counter = {counter} incrementCount={incrementCount} decrementCount={decrementCount}/>
     )}>
     </Counter>
+    <button onClick={props.user}>changeUser</button>
     {/*<header className="App-header">
      <CheckoutContainer/>
     <TestComponent/>
@@ -43,4 +46,16 @@ function App() {
   );
 }
 
-export default App;
+const mapStateToProps = (state)=>{
+  console.log(state);
+  return {
+    userName: state.user
+  }
+}
+
+const mapDispatchToProps = (dispatch) =>{
+  return {
+     user: () => dispatch({type: 'Authorization',value:'praveen'})
+  }
+}
+export default connect(mapStateToProps,mapDispatchToProps)(App);
