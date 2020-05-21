@@ -1,0 +1,13 @@
+.whole {
+  /*text-align: center;*/
+  width: 600px;
+  margin: auto;
+}
+.cent {
+  text-align: center;
+  width: 450px;
+}
+.span50 {
+  width: 50%;
+  display: inline-block;
+}
