@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
-import { myReducer } from './reducers/reducer';
+import reducer from './reducers/index';
+import thunk from 'redux-thunk';
 import { createStore, applyMiddleware } from 'redux';
 // const store = createStore(myReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()); 
 function logger({getState}){
@@ -14,7 +15,7 @@ function logger({getState}){
     return next(action)
   } 
 }
-const store = createStore(myReducer,applyMiddleware(logger));
+const store = createStore(reducer,applyMiddleware(thunk));
 ReactDOM.render(
   <Provider store={store}>
   <React.StrictMode>
